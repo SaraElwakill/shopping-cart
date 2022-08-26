@@ -1,0 +1,215 @@
+/** @format */
+
+.card-wrapper {
+	flex-grow: 3;
+	margin: 10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	@media (max-width: 500px) {
+	}
+}
+
+.product-card {
+	margin: 5px;
+	flex: 1 0 200px; //flex
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	/* From https://css.glass */
+	background: rgba(255, 255, 255, 0.29);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.73);
+
+	&:hover {
+		-webkit-box-shadow: 0px 0px 30px 0px rgba(243, 243, 240, 0.67);
+		-moz-box-shadow: 0px 0px 30px 0px rgba(27, 27, 24, 0.67);
+		box-shadow: 0px 0px 30px 0px rgba(5, 5, 5, 0.67);
+	}
+}
+.product-imgframe {
+	border-radius: 16px;
+	flex: 1 0 190px;
+	height: 190px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	button {
+		border-color: white;
+		border-radius: 16px;
+	}
+	img {
+		border-radius: 16px;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+	}
+}
+.product-info {
+	width: 170px;
+	margin: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	p {
+		font-weight: bold;
+		color: #725504;
+	}
+}
+.product-action {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	button {
+		margin: 10px;
+		position: relative;
+		outline: none;
+		text-decoration: none;
+		border-radius: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		text-transform: uppercase;
+		height: 45px;
+		width: 130px;
+		opacity: 1;
+		background-color: #ffffff;
+		border: 1px solid rgba(0, 0, 0, 0.6);
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		border: 1px solid rgba(255, 255, 255, 0.73);
+
+		&:hover {
+			animation: bn54rotate 0.7s ease-in-out both;
+
+			-webkit-box-shadow: 0px 0px 30px 0px rgba(229, 255, 0, 0.67);
+			-moz-box-shadow: 0px 0px 30px 0px rgba(215, 241, 99, 0.67);
+			box-shadow: 0px 0px 30px 0px rgba(201, 158, 18, 0.67);
+			span {
+				animation: bn54storm 0.7s ease-in-out both;
+				animation-delay: 0.06s;
+			}
+		}
+		span {
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-weight: bold;
+			color: #725504;
+			font-size: 12px;
+			font-weight: 500;
+			letter-spacing: 0.7px;
+		}
+	}
+}
+
+@keyframes bn54rotate {
+	0% {
+		transform: rotate(0deg) translate3d(0, 0, 0);
+	}
+	25% {
+		transform: rotate(3deg) translate3d(0, 0, 0);
+	}
+	50% {
+		transform: rotate(-3deg) translate3d(0, 0, 0);
+	}
+	75% {
+		transform: rotate(1deg) translate3d(0, 0, 0);
+	}
+	100% {
+		transform: rotate(0deg) translate3d(0, 0, 0);
+	}
+}
+
+@keyframes bn54storm {
+	0% {
+		transform: translate3d(0, 0, 0) translateZ(0);
+	}
+	25% {
+		transform: translate3d(4px, 0, 0) translateZ(0);
+	}
+	50% {
+		transform: translate3d(-3px, 0, 0) translateZ(0);
+	}
+	75% {
+		transform: translate3d(2px, 0, 0) translateZ(0);
+	}
+	100% {
+		transform: translate3d(0, 0, 0) translateZ(0);
+	}
+}
+
+@keyframes fadding {
+	0% {
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+
+	80% {
+		transform: translateY(20%);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.modal-card {
+	margin: 5px;
+	flex: 1 0 500px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	/* From https://css.glass */
+	background: rgba(255, 255, 255, 0.29);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.73);
+}
+
+.modal-imgframe {
+	border-radius: 16px;
+	margin: -20px;
+	width: 500px;
+	height: 250px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	img {
+		border-radius: 16px;
+		width: 250px;
+		height: 250px;
+		cursor: pointer;
+		margin: 10px;
+	}
+	.modal-info {
+		// width:200px;
+		margin: 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		p {
+			font-weight: bold;
+			color: #725504;
+			text-align: left;
+			margin-top: 30px;
+			span {
+				color: #626908;
+				box-shadow: 0 1px 4px rgba(97, 67, 4, 0.918);
+				backdrop-filter: blur(5px);
+				-webkit-backdrop-filter: blur(5px);
+				margin-bottom: 15px;
+			}
+		}
+	}
+}

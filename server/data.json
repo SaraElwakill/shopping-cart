@@ -1,0 +1,82 @@
+[
+	{
+		"title": "Necklace  1",
+		"imageUrl": "/images/photo1.jpeg",
+		"description": "this a pretty good product necklace",
+		"price": 1100,
+		"qty": 1,
+		"size": ["XS", "L", "XL"]
+	},
+	{
+		"title": "Earrings  2",
+		"imageUrl": "/images/photo2.jpeg",
+		"description": "this a pretty good product Earrings",
+		"price": 1200,
+		"qty": 1,
+		"size": ["S", "L"]
+	},
+	{
+		"title": "Ring  3",
+		"imageUrl": "/images/photo3.jpeg",
+		"description": "this a pretty good product ring",
+		"price": 1900,
+		"qty": 1,
+		"size": ["L", "XL"]
+	},
+	{
+		"title": "Necklace  4",
+		"imageUrl": "/images/photo4.jpeg",
+		"description": "this a pretty good product string necklace",
+		"price": 1000,
+		"qty": 1,
+		"size": ["XS", "S", "M"]
+	},
+	{
+		"title": "RingRose  5",
+		"imageUrl": "/images/photo5.jpeg",
+		"description": "this a pretty good product rose ring",
+		"price": 1000,
+		"qty": 1,
+		"size": ["S", "M", "XL"]
+	},
+	{
+		"title": "Necklace  1",
+		"imageUrl": "/images/photo6.jpeg",
+		"description": "this a pretty good product necklace",
+		"price": 1100,
+		"qty": 1,
+		"size": ["XS", "L", "XL"]
+	},
+	{
+		"title": "Earrings  2",
+		"imageUrl": "/images/photo2.jpeg",
+		"description": "this a pretty good product Earrings",
+		"price": 1200,
+		"qty": 1,
+		"size": ["S", "L"]
+	},
+	{
+		"title": "Ring  3",
+		"imageUrl": "/images/photo3.jpeg",
+		"description": "this a pretty good product ring",
+		"price": 1900,
+		"qty": 1,
+		"size": ["L", "XL"]
+	},
+	{
+		"title": "Necklace  4",
+		"imageUrl": "/images/photo4.jpeg",
+		"description": "this a pretty good product string necklace",
+		"price": 1000,
+		"qty": 1,
+		"size": ["XS", "S", "M"]
+	},
+	{
+		"title": "RingRose  5",
+		"imageUrl": "/images/photo5.jpeg",
+		"description": "this a pretty good product rose ring",
+		"price": 2000,
+		"qty": 1,
+		"size": ["S", "M", "XL"]
+	}
+]

@@ -1,0 +1,61 @@
+/** @format */
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+#root {
+	height: 100vh;
+}
+.layout {
+	width: 100%;
+	background-image: url("../public/images/maxim-berg-9XunOfueKKI-unsplash.jpg");
+	background: linear-gradient(white, rgb(231, 231, 199));
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	display: grid;
+	grid-template-areas:
+		"header"
+		"main"
+		"footer";
+	grid-template-rows: 50px 1fr 50px;
+}
+
+main {
+	width: 100%;
+	grid-area: main;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.main-product {
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+@media (max-width: 500px) {
+	.main-product {
+		flex-direction: column;
+	}
+}
+@keyframes spine {
+	0% {
+		transform: rotate(20deg);
+	}
+	50% {
+		transform: rotate(90deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}

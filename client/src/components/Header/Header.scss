@@ -1,0 +1,70 @@
+/** @format */
+
+header {
+	grid-area: header;
+	/* From https://css.glass */
+	background: rgba(255, 255, 255, 0.07);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(3.2px);
+	-webkit-backdrop-filter: blur(3.2px);
+	border: 1px solid rgba(255, 255, 255, 0.23);
+	position: relative;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		margin: 20px;
+		width: 200px;
+		height: 100px;
+		position: absolute;
+		left: 20px;
+		@media (max-width: 400px) {
+			left: -30px;
+		}
+	}
+	h3 {
+		color: rgb(114, 85, 4);
+		font-size: 20px;
+		@media (max-width: 450px) {
+			font-size: 12px;
+		}
+	}
+	button {
+		border: none;
+		outline: none;
+		background: transparent;
+		position: absolute;
+		right: 50px;
+		cursor: pointer;
+
+		&:active {
+			transform: scale(1.1);
+		}
+		.cart-icon {
+			font-size: 40px;
+			color: rgb(114, 85, 4);
+		}
+		.span {
+			position: absolute;
+			right: -5px;
+			top: 15px;
+			width: 15px;
+			height: 15px;
+			border: 1px solid rgb(243, 232, 133);
+			border-radius: 50%;
+			background-color: yellow;
+			font-size: 12px;
+			font-weight: bold;
+			text-align: center;
+
+			display: flex;
+
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}
